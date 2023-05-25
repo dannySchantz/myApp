@@ -2,8 +2,8 @@ import { PUBLIC_BACKEND_BASE_URL } from '$env/static/public';
 import { writable } from 'svelte/store';
 import { goto } from '$app/navigation';
 const emptyAuth = {
-  token: '',
-  userId: ''
+  'token': '',
+  'userId': ''
 };
 
 
@@ -34,7 +34,6 @@ export function getTokenFromLocalStorage() {
 
 export async function isLoggedIn() {
   if (!getTokenFromLocalStorage()) {
-    loggedIn.set(false)
     return false;
   }
 
@@ -56,8 +55,8 @@ export async function isLoggedIn() {
       localStorage.setItem(
         'auth',
         JSON.stringify({
-          token: parsedResponse.token,
-          userId: parsedResponse.record.id
+          'token': parsedResponse.token,
+          'userId': parsedResponse.record.id
         })
       );
       loggedIn.set(true)
@@ -65,7 +64,6 @@ export async function isLoggedIn() {
     }
     return false
   } catch {
-    loggedIn.set(false)
     return false;
   }
 }
@@ -93,8 +91,8 @@ export async function logInUser(username, password) {
     localStorage.setItem(
       'auth',
       JSON.stringify({
-        username: res.username,
-        password: res.password,
+        'token': res.token,
+        'userId': res.record.id,
       })
     );
     loggedIn.set(true)

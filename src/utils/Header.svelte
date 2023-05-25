@@ -47,9 +47,7 @@
           {#if loggedIn === true}
               <button class="btn btn-ghost normal-case text-l" on:click={logOut}>Logout</button>
               {:else}
-              {#if !isLogInPage}
               <button class="btn btn-ghost normal-case text-l" on:click={navigateToLoginPage}>Log In</button>
-              {/if}
           {/if}
       </div>
   {/if}
