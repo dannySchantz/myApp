@@ -4,7 +4,7 @@
     export let data;
 </script>
 
-<div class="mt-10">
+<div class="mt-10 ml-10 mr-10">
     <div class="flex">
         <div class="flex-1">
             <h1 class="text-3xl font-extrabold">{data.job.title}</h1>
