@@ -1,16 +1,14 @@
 <script>
   import humanize from 'humanize-plus';
   export let data;
-  import Header from '../utils/Header.svelte';
 </script>
 
-<Header />
 
 <h1 class="text-center text-xl font-bold mt-4">Find Your Next Job</h1> 
 
 <div class="overflow-x-auto w-full">
   {#each data.jobs as job}
-    <div class="flex flex-col mt-10 mr-10 ml-20">
+    <div class="flex flex-col mt-10 mr-20 ml-20">
       <div>
         <a class="font-bold text-2xl" href="/jobs/{job.id}">{job.title}</a>
         <div class="text-sm mt-1">

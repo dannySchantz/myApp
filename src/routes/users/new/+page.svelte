@@ -2,7 +2,6 @@
     import { PUBLIC_BACKEND_BASE_URL } from '$env/static/public';
     import { goto } from '$app/navigation';
     import { logInUser, loggedIn } from './../../../utils/auth.js';
-    import Header from '../../../utils/Header.svelte';
   
     let formErrors = {};
     
@@ -38,10 +37,8 @@
         const res = await logInUser(userData.username, userData.password);
         
         if (res.success) {
-          console.log(1)
           loggedIn.set(true)
           postSignUp();
-          console.log(2)
         } else {
           loggedIn.set(false)
           throw 'Sign up succeeded but authentication failed';
@@ -52,7 +49,6 @@
       }
     }
     </script>
-  <Header />
   <!-- {#if } -->
   <div class = "alert alert-info shadow-lg">
     <div>

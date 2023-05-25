@@ -3,7 +3,7 @@
     import { goto } from '$app/navigation';
     import { logInUser } from '../../utils/auth';
     let formErrors = {};
-    import Header from '../../utils/Header.svelte';
+
 
 
     async function _logInUser(evt) {
@@ -23,7 +23,6 @@
 
 </script>
   
-<Header />
 
 <h1 class="text-center text-xl mt-20">Please Log In</h1>
   <div class="text-center">
