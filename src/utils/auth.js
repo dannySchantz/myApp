@@ -10,16 +10,15 @@ const emptyAuth = {
 export function logOut() {
   localStorage.setItem('auth', JSON.stringify(emptyAuth));
   loggedIn.set(false);
-  // _updateLoggedIn(false)
   return true;
 }
-// export let loggedIn = false;
+
 export const loggedIn = writable(false);
 
 export function getUserId() {
   const auth = localStorage.getItem('auth');
   if (auth) {
-    return JSON.parse(auth).userId;
+    return JSON.parse(auth)["userId"]
   }
   return null;
 }
@@ -27,7 +26,7 @@ export function getUserId() {
 export function getTokenFromLocalStorage() {
   const auth = localStorage.getItem('auth');
   if (auth) {
-    return JSON.parse(auth).token;
+    return JSON.parse(auth)["token"]
   }
   return null;
 }
@@ -51,7 +50,7 @@ export async function isLoggedIn() {
     );
 
     const parsedResponse = await rawResponse.json();
-    if (rawResponse.status === 200) {
+    if (rawResponse.status == 200) {
       localStorage.setItem(
         'auth',
         JSON.stringify({

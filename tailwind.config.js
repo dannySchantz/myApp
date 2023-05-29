@@ -2,19 +2,15 @@
 module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
-    extend: {}
+    extend: {},
   },
   plugins: [require("daisyui"), require('@tailwindcss/typography')],
+  
   daisyui: {
-    styled: true,
-    themes: ["night", "retro", "lemonade"],
-    base: true,
-    utils: true,
-    logs: true,
-    rtl: false,
-    prefix: "",
+    themes: ["night", "lemonade"],
     darkTheme: "night",
   },
 };
+
 
 

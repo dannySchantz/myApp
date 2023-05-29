@@ -4,9 +4,9 @@
 </script>
 
 
-<h1 class="text-center text-xl font-bold mt-4">Find Your Next Job</h1> 
+<h1 class="text-center text-xl font-bold mt-4 text-primary">Find Your Next Job</h1> 
 
-<div class="overflow-x-auto w-full">
+<div class="overflow-x-auto w-full text-primary">
   {#each data.jobs as job}
     <div class="flex flex-col mt-10 mr-20 ml-20">
       <div>
