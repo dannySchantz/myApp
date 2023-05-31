@@ -27,7 +27,7 @@
 
             <div class="prose max-w-none mt-8 text-primary">
                 <h2 class="text-xl font-thin text-primary">Description</h2>
-                <SvelteMarkdown source={data.job.description} />
+                <SvelteMarkdown source={data.job.description} class="text-primary" />
                 <div class="mt-6" />
                 <h2 class="text-xl font-thin text-primary">Requirements</h2>
                 <SvelteMarkdown source={data.job.requirements} />

@@ -51,10 +51,7 @@
     </script>
   <!-- {#if } -->
   <div class="alert alert-info shadow-l flex justify-start">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current flex-shrink-0 w-6 h-6">
-      <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" class="opacity-25"></circle>
-      <path fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l1.414-1.414C2.56 16.238 2 14.198 2 12H2c0-3.042 1.135-5.824 3-7.938L4.586 4.586A7.98 7.98 0 014 12h4c0-2.209.896-4.209 2.344-5.656L10.938 4.586A7.98 7.98 0 0112 4h.001c2.209 0 4.209.896 5.656 2.344L17.414 6.73C19.565 9.138 21 11.966 21 15h-4a8 8 0 01-7.938-9h-.001c2.21 0 4.21.896 5.657 2.343l1.414-1.414C17.628 4.135 14.856 3 11.999 3z"></path>
-    </svg>
+      <svg aria-hidden="true" class="flex-shrink-0 inline w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>    </svg>
     <p class="justify-left">Please sign up first.</p>
   </div>
     <!-- {/if} -->
